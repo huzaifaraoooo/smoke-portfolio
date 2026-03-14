@@ -1,0 +1,77 @@
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useCursor } from '../hooks/useCursor';
+
+/**
+ * Magnetic cursor with glow and trailing dots.
+ * Pulls toward links/buttons; trail fades behind; glow intensifies on hover.
+ */
+export default function Cursor() {
+  const { pos, trail, isHover, visible } = useCursor();
+
+  useEffect(() => {
+    if (visible) document.body.classList.add('custom-cursor-active');
+    else document.body.classList.remove('custom-cursor-active');
+    return () => document.body.classList.remove('custom-cursor-active');
+  }, [visible]);
+
+  if (!visible) return null;
+
+  return (
+    <div
+      className="fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]"
+      aria-hidden="true"
+    >
+      {/* Trail dots */}
+      {trail.map((p, i) => (
+        <motion.div
+          key={i}
+          className="absolute rounded-full bg-secondary"
+          style={{
+            left: p.x,
+            top: p.y,
+            x: '-50%',
+            y: '-50%',
+            width: 6 - i * 0.5,
+            height: 6 - i * 0.5,
+            opacity: 0.6 - (i / trail.length) * 0.55,
+          }}
+        />
+      ))}
+
+      {/* Glow orb */}
+      <motion.div
+        className="absolute rounded-full bg-primary"
+        style={{
+          left: pos.x,
+          top: pos.y,
+          x: '-50%',
+          y: '-50%',
+          width: isHover ? 56 : 24,
+          height: isHover ? 56 : 24,
+          boxShadow: isHover
+            ? '0 0 40px 12px rgba(99, 102, 241, 0.4), 0 0 80px 24px rgba(139, 92, 246, 0.2)'
+            : '0 0 20px 6px rgba(99, 102, 241, 0.25)',
+        }}
+        animate={{
+          scale: 1,
+        }}
+        transition={{ type: 'spring', stiffness: 400, damping: 28 }}
+      />
+
+      {/* Inner dot */}
+      <motion.div
+        className="absolute rounded-full bg-white"
+        style={{
+          left: pos.x,
+          top: pos.y,
+          x: '-50%',
+          y: '-50%',
+          width: isHover ? 6 : 4,
+          height: isHover ? 6 : 4,
+        }}
+        transition={{ type: 'spring', stiffness: 400, damping: 28 }}
+      />
+    </div>
+  );
+}
