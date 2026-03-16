@@ -32,7 +32,7 @@ export default function About() {
           />  
           <div>
             <p className="text-white/80 leading-relaxed mb-6">
-              I'm a Web Developer based in Lahore, focused on building clean, performant web applications
+              I&apos;m a Web Developer based in Lahore, focused on building clean, performant web applications
               with modern technologies.
             </p>
             <div className="space-y-2 text-white/70">

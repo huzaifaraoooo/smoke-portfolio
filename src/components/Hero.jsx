@@ -8,7 +8,7 @@ const PAUSE_AT_END = 2000;
 export default function Hero() {
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isDone, setIsDone] = useState(false);
+  const [isDone, _setIsDone] = useState(false);
 
   useEffect(() => {
     if (isDone) return;
@@ -55,7 +55,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Hi, I'm <span className="text-primary">Huzaifa Akbar</span>
+          Hi, I&apos;m <span className="text-primary">Huzaifa Akbar</span>
         </motion.h1>
         <motion.p
           className="text-xl sm:text-2xl text-white/80 mb-2 min-h-[2rem] font-medium"
