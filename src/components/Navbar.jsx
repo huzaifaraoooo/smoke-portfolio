@@ -21,7 +21,7 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between glass-card px-6 py-3">
         <a href="#hero" className="text-lg font-semibold text-white">
-          Huzaifa
+          Rao Huzaifa Akbar
         </a>
 
         {/* Desktop nav */}
