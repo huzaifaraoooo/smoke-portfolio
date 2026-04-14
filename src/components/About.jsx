@@ -32,9 +32,17 @@ export default function About() {
           />  
           <div>
             <p className="text-white/80 leading-relaxed mb-6">
-              I am a passionate Web Developer with experience in building responsive and modern
-              web applications using React, JavaScript and backend technologies. 
-              I focus on performance, clean design and user experience.
+              I am a passionate Web Developer who enjoys building modern, responsive, and user-friendly
+              web applications. I specialize in creating clean and efficient websites using technologies
+                like React, JavaScript, and backend tools.
+
+              I love turning ideas into real digital products that not only look good but also perform smoothly
+              and deliver great user experience.
+
+              I am continuously learning new technologies and improving my skills to stay updated with modern
+              web development trends. My goal is to build impactful projects that solve real-world problems and provide value to users.
+
+            Let’s build something amazing together
             </p>
             <div className="space-y-2 text-white/70">
               <p><span className="text-primary font-medium">Education:</span> BS Computer Science (2021–2025)</p>
