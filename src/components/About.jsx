@@ -32,8 +32,9 @@ export default function About() {
           />  
           <div>
             <p className="text-white/80 leading-relaxed mb-6">
-              I&apos;m a Web Developer based in Lahore, focused on building clean, performant web applications
-              with modern technologies.
+              I am a passionate Web Developer with experience in building responsive and modern
+              web applications using React, JavaScript and backend technologies. 
+              I focus on performance, clean design and user experience.
             </p>
             <div className="space-y-2 text-white/70">
               <p><span className="text-primary font-medium">Education:</span> BS Computer Science (2021–2025)</p>
