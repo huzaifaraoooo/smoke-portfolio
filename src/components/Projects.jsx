@@ -8,9 +8,15 @@ const PROJECTS = [
     highlight: true,
   },
   {
-    title: 'Development of E-Commerce Website',
-    description: 'A fully functional e-commerce web application built with React.js for the frontend, featuring a seamless shopping experience with product browsing, cart management, and order processing capabilities.',
-    tags: ['React', 'Tailwind CSS', 'CSS3 ', 'React Router v6 - Navigation', 'JavaScript', 'React Hooks'],
+    title: 'LuxWatch Store – Full Stack E-Commerce Web Application (In Progress)',
+    description: 'Developing a modern full-stack e-commerce web application using React.js (Vite), Node.js, Express.js, and MySQL. The application features a responsive user interface, secure user authentication, product catalog, shopping cart, wishlist, user profile, order management, and an admin dashboard for managing products, users, and orders. The project follows modern web development practices with scalable architecture and responsive design.',
+    tags: ['React.js', 'Vite', 'JavaScript (ES6+)', 'HTML5','CSS3','Node.js','MySQL','REST API Development','JWT Authentication','React Router DOM','Axios','Shopping Cart','Context API','Favorites/Wishlist','Order Management','Git & GitHub',],
+    highlight: true,
+  },
+  {
+    title: 'SyncTalk – Real-Time Chat Application (In Progress)',
+    description: 'Developing a modern real-time chat application using React.js, Node.js, Express.js, MongoDB, and Socket.IO. The application enables instant messaging with real-time communication, user authentication, online user status, responsive user interface, and secure backend integration. The project is designed following modern full-stack development practices with scalable architecture and efficient client-server communication.',
+    tags: ['React.js', 'Vite', 'JavaScript (ES6+)', 'HTML5','CSS3','Node.js','Express.js','MongoDB','Socket.IO','REST API Development','User Authentication','Real-Time Communication','Axios','Responsive Web Design','Context API','Git & GitHub',],
     highlight: true,
   },
 ];

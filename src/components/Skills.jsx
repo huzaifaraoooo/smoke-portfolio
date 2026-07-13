@@ -13,6 +13,8 @@ const SKILLS = [
   'Git & GitHub',
   'VS Code',
   'Cursor',
+  'vite + React',
+  'Socket.io',
 ];
 
 const container = {
