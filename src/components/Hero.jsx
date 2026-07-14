@@ -87,8 +87,8 @@ export default function Hero() {
             Get in Touch
           </a>
           <a
-            href="/Huzaifa_Akbar_CV.pdf"
-            download="Huzaifa_Akbar_CV.pdf"
+            href="/Huzaifa_Akbar_CV_Final_.pdf"
+            download="Huzaifa_Akbar_CV_Final_.pdf"
             className="px-6 py-3 rounded-xl glass-card border border-white/20 hover:border-primary/50 text-white font-medium transition-colors"
           >
             Download CV
